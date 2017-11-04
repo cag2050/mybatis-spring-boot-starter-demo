@@ -18,7 +18,7 @@ public class MybatisSpringBootStarterDemoApplicationTests {
 	private UserMapper userMapper;
 
 	@Test
-	public void contextLoads() {
+	public void select() {
 		List<UserEntity> users = userMapper.getAll();
 		System.out.println("users ============");
 		System.out.println(users.toString());
