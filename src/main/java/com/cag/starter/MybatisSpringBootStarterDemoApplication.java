@@ -4,7 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication //等价于 @Configuration + @EnableAutoConfiguration + @ComponentScan
 @MapperScan("com.cag.mapper")
 public class MybatisSpringBootStarterDemoApplication {
 
