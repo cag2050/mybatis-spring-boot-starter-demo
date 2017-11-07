@@ -19,3 +19,5 @@ Create TABLE `user` (
 ```
 Insert INTO `user` VALUES ('1', 'summer', '100', 'shanghai,pudong');
 ```
+
+* 参考：http://blog.csdn.net/gebitan505/article/details/54929287
