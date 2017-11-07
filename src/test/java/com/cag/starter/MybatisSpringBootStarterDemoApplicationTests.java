@@ -8,20 +8,24 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Iterator;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class MybatisSpringBootStarterDemoApplicationTests {
 
-	@Autowired
-	private UserMapper userMapper;
+    @Autowired
+    private UserMapper userMapper;
 
-	@Test
-	public void select() {
-		List<UserEntity> users = userMapper.getAll();
-		System.out.println("users ============");
-		System.out.println(users.toString());
-	}
+    @Test
+    public void select() {
+        List<UserEntity> users = userMapper.getAll();
+        for (UserEntity userEntity : users) {
+            System.out.println("id: " + userEntity.getId() + ",user name:" + userEntity.getUserName() + ",user age:" + userEntity.getUserAge() + ",user addresss:" + userEntity.getUserAddress());
+        }
+        System.out.println("users ============");
+        System.out.println(users.toString());
+    }
 
 }
