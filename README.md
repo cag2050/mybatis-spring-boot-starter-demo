@@ -20,4 +20,6 @@ Create TABLE `user` (
 Insert INTO `user` VALUES ('1', 'summer', '100', 'shanghai,pudong');
 ```
 
+* springboot会自动加载spring.datasource.*相关配置，数据源就会自动注入到sqlSessionFactory中，sqlSessionFactory会自动注入到Mapper中，你一切都不用管了，直接拿起来使用就行了。
+
 * 参考：http://blog.csdn.net/gebitan505/article/details/54929287
